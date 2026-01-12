@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Auxiliars",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Auxiliars",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

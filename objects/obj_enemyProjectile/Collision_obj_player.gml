@@ -1,0 +1,1 @@
+player_damage(dmg, self, -4, 90)

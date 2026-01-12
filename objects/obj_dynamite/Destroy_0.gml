@@ -1,0 +1,1 @@
+part_particles_create(EXPLO_SYS, x, y, EXPLO_PART, 100)
