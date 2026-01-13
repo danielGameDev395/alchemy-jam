@@ -1,5 +1,5 @@
 instance_destroy(other)
 
-global.time+=1
+global.time+=damage
 
-time_changed(1)
+time_changed(damage)

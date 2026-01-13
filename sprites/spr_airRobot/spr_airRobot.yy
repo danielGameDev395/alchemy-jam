@@ -3,7 +3,7 @@
   "%Name":"spr_airRobot",
   "bboxMode":2,
   "bbox_bottom":25,
-  "bbox_left":6,
+  "bbox_left":7,
   "bbox_right":25,
   "bbox_top":6,
   "collisionKind":1,

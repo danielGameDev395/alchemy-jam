@@ -119,3 +119,4 @@ function playerStateDamage() {
 	
 	if (place_meeting(x, y+1, obj_solid)) { dmg_dir=0; xspd=0; yspd=0; state=playerStateFree }
 }
+

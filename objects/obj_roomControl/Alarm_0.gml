@@ -1,3 +1,6 @@
+// stops the chronometer
+if (time_freezed) { exit; }
+
 if (!global.paused) { 
 	global.time-=0.1
 	

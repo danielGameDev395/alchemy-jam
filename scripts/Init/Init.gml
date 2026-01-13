@@ -10,7 +10,7 @@ display_set_gui_size(WIDTH, HEIGHT)
 
 // globals
 global.paused=false
-global.best_times=[0,0,0,0]
+global.stages=[Debug, Room1]
 
 // macros
 #macro GRAVITY 0.5

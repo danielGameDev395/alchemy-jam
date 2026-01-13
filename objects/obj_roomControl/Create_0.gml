@@ -5,6 +5,8 @@
 global.time=20
 critic_time=8
 
+time_freezed=false
+
 time_change=0
 alpha_time=0
 y_time=0
