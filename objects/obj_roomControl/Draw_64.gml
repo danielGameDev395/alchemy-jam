@@ -14,7 +14,8 @@ draw_text(35, 15, format_time(global.time))
 // time change visual indicator
 if (time_change!=0) {
 	signal=time_change>0? "+":""
-	draw_text_colour(140, y_time, signal+string(time_change), -1, -1, -1, -1, alpha_time)
+	color=time_change>0? c_lime:c_red
+	draw_text_colour(140, y_time, signal+string(time_change), color, color, color, color, alpha_time)
 	y_time--
 }
 #endregion

@@ -76,6 +76,7 @@
     {"id":{"name":"spr_solid","path":"sprites/spr_solid/spr_solid.yy",},},
     {"id":{"name":"spr_stageSelector_background","path":"sprites/spr_stageSelector_background/spr_stageSelector_background.yy",},},
     {"id":{"name":"spr_swordHitbox","path":"sprites/spr_swordHitbox/spr_swordHitbox.yy",},},
+    {"id":{"name":"spr_swordHitboxAir","path":"sprites/spr_swordHitboxAir/spr_swordHitboxAir.yy",},},
     {"id":{"name":"spr_textBox","path":"sprites/spr_textBox/spr_textBox.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
   ],

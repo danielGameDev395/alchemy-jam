@@ -61,7 +61,7 @@ function playerStateAttack() {
 	sprite_index=spr_playerAttack
 	
 	// change this value after definitive animation*
-	if (image_index>2 && !instance_exists(obj_swordHitbox)) { instance_create_depth(x+sprite_width/4, y, depth, obj_swordHitbox) }
+	if (image_index>2 && !instance_exists(obj_swordHitbox)) { instance_create_depth(x, y, depth-1, obj_swordHitbox) }
 	
 	// Back to free state
 	if (image_index>image_number-1) { 
@@ -75,7 +75,7 @@ function playerStateAttackAir() {
 	
 	yspd+=GRAVITY/2; y+=yspd
 	
-	if (!instance_exists(obj_swordHitbox)) { instance_create_depth(x+sprite_width/4, y, depth, obj_swordHitbox) }
+	if (!instance_exists(obj_swordHitbox)) { instance_create_depth(x, y, depth-1, obj_swordHitbox) }
 	
 	// change state
 	if (place_meeting(x, y+yspd, obj_solid)) {
@@ -108,6 +108,8 @@ function playerStateSliding() {
 function playerStateDamage() {
 	// add sprite*
 	sprite_index=spr_playerIdle
+	
+	if (instance_exists(obj_swordHitbox)) { instance_destroy(obj_swordHitbox) }
 	
 	yspd+=GRAVITY
 	
