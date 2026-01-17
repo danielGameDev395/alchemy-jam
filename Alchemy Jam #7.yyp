@@ -46,6 +46,7 @@
     {"id":{"name":"obj_enemyProjectile","path":"objects/obj_enemyProjectile/obj_enemyProjectile.yy",},},
     {"id":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},},
     {"id":{"name":"obj_laser","path":"objects/obj_laser/obj_laser.yy",},},
+    {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_particleSystems","path":"objects/obj_particleSystems/obj_particleSystems.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_robot","path":"objects/obj_robot/obj_robot.yy",},},
@@ -55,6 +56,7 @@
     {"id":{"name":"obj_swordHitbox","path":"objects/obj_swordHitbox/obj_swordHitbox.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Debug","path":"rooms/Debug/Debug.yy",},},
+    {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Stage_Selector","path":"rooms/Stage_Selector/Stage_Selector.yy",},},
     {"id":{"name":"Auxiliars","path":"scripts/Auxiliars/Auxiliars.yy",},},
@@ -89,6 +91,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Stage_Selector","path":"rooms/Stage_Selector/Stage_Selector.yy",},},
     {"roomId":{"name":"Debug","path":"rooms/Debug/Debug.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

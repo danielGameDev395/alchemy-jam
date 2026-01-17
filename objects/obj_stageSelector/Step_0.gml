@@ -1,4 +1,4 @@
-for (var i = 0; i<stages+1; ++i) {
+for (var i = 0; i<stages+1; i++) {
 	// selected stage blends aqua
 	if (index==i) { layer_sprite_blend(boxes[i], c_aqua) }
 	else { layer_sprite_blend(boxes[i], c_white) }
@@ -10,10 +10,12 @@ for (var i = 0; i<stages+1; ++i) {
 // add blocked audio at else*
 if (right_button()) { 
 	if (index<stages && global.best_times[index]!=0) { index++ }
+	else { /*audio_play_sound()*/ }
 }
 
 if (left_button()) {
 	if (index>0) { index-- }
+	else { /*audio_play_sound()*/ }
 }
 
 if (confirm_button()) { select(index) }

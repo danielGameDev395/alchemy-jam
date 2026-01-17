@@ -20,6 +20,18 @@ function left_button() {
 }
 #endregion
 
+#region Up and Down
+function up_button() {
+	return keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) ||
+			gamepad_button_check_pressed(0, gp_padu)
+}
+
+function down_button() {
+	return keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) ||
+			gamepad_button_check_pressed(0, gp_padd)
+}
+#endregion
+
 #region Actions
 function confirm_button() {
 	return keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) ||
@@ -34,5 +46,10 @@ function jump_button() {
 function attack_button() {
 	return keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("K")) ||
 			gamepad_button_check_pressed(0, gp_face3)
+}
+
+function pause_button() {
+	return keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("P")) ||
+			gamepad_button_check_pressed(0, gp_start)
 }
 #endregion

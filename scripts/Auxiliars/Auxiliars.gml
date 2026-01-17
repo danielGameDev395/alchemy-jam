@@ -45,3 +45,19 @@ function time_changed(dmg) {
 		alpha_time=1; y_time=45
 	}
 }
+
+// pause or unpause the game and the scenario
+function pause_game() {
+	global.paused=!global.paused
+
+	// stops the ground and the bomb
+	if (global.paused) {
+		layer_hspeed("Ground", 0)
+		layer_sprite_speed(bomb, 0)
+	}
+	else {
+		layer_hspeed("Ground", -2)
+		layer_sprite_speed(bomb, 1)
+	}	
+}
+
