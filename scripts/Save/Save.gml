@@ -11,7 +11,7 @@ function save_game() {
 }
 
 function load_game() {
-	global.best_times=[0,0,0,0]
+	global.best_times=[0,0,0]
 
 	if (file_exists("save.sav")) {
 		ini_open("save.sav")

@@ -1,1 +1,1 @@
-if (x>0) { /* play sound effect* */ }
+if (x>0) { audio_play_sound(EnemyDefeated, 0, false) }

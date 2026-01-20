@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"BombExplodes",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.7693651,
+  "exportDir":"",
+  "name":"BombExplodes",
+  "parent":{
+    "name":"Enemies",
+    "path":"folders/Sounds/SFX/Enemies.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"BombExplodes.wav",
+  "volume":0.5,
+}

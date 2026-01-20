@@ -15,10 +15,12 @@ function player_damage(damage, other_, yspd_, cooldown) {
 	if (obj_player.invincible==1) { exit; } // damage boost
 	
 	time_changed(-damage) // visual indicator
+
+	// reduces time and plays sound
+	global.time-=damage
+	audio_play_sound(PlayerDamage, 0, false)
 	
 	with (obj_player) {
-		global.time-=damage
-		
 		// sets the hit flash
 		flash=1
 		

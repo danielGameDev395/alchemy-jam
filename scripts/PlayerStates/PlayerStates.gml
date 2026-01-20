@@ -19,7 +19,7 @@ function playerStateFree() {
 	
 	#region Change state
 	// Air
-	if (jump_button()) { yspd=jump_spd; state=playerStateAir }
+	if (jump_button()) { yspd=jump_spd; audio_play_sound(PlayerJump, 0, false); state=playerStateAir }
 	if !(place_meeting(x, y+1, obj_solid)) { state=playerStateAir }
 	// Attack
 	if (attack_button()) { xspd=0; image_index=0; state=playerStateAttack }
@@ -96,7 +96,7 @@ function playerStateSliding() {
 	
 	#region Change state
 	// Air
-	if (jump_button()) { yspd=jump_spd; x-=sprite_width/2; state=playerStateAir }
+	if (jump_button()) { yspd=jump_spd; audio_play_sound(PlayerJump, 0, false); x-=sprite_width/2; state=playerStateAir }
 	// Free
 	if (place_meeting(x, y+yspd, obj_solid)) {
 		while !(place_meeting(x, y+sign(yspd), obj_solid)) { y+=sign(yspd) }

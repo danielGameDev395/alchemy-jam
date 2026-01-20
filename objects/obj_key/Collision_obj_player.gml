@@ -11,4 +11,6 @@ alarm_set(0, 120)
 
 save_game()
 
+if (visible) { audio_play_sound(GetKey, 0, false) }
+
 visible=false
