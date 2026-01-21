@@ -52,14 +52,37 @@ function time_changed(dmg) {
 function pause_game() {
 	global.paused=!global.paused
 
-	// stops the ground and the bomb
 	if (global.paused) {
-		layer_hspeed("Ground", 0)
-		layer_sprite_speed(bomb, 0)
+		// plays pause sound
+		audio_pause_all()
+		audio_play_sound(Pause, 0, false)
+		
+		// stops the ground and the bomb
+		layer_hspeed("Ground", 0); layer_sprite_speed(bomb, 0)
 	}
 	else {
-		layer_hspeed("Ground", -2)
-		layer_sprite_speed(bomb, 1)
+		audio_resume_all()
+		
+		layer_hspeed("Ground", -2); layer_sprite_speed(bomb, 1)
 	}	
 }
 
+// play the music of the stage
+function play_music(stage) {
+	switch (stage) {
+		case 0: audio_play_sound(Stage_1, 0, true) break;
+		case 1: audio_play_sound(Stage_2, 0, true) break;
+		case 2: audio_play_sound(Stage_3, 0, true) break;
+		default: show_message("Stage hasn't a music") break;
+	}
+}
+
+// controls the game over logic
+function game_over(cause) {
+	// based on the game over cause
+	switch (cause) {
+		case "pushed": show_debug_message("The wall pushed you :("); break;
+		case "time over": show_debug_message("The time is up :("); break;
+		default: show_message($"{cause} isn't a valid cause") break;
+	}
+}

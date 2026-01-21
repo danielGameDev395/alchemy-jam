@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"PlayerKatana",
+  "%Name":"Stage_3",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.29535148,
+  "duration":44.799976,
   "exportDir":"",
-  "name":"PlayerKatana",
+  "name":"Stage_3",
   "parent":{
-    "name":"Player",
-    "path":"folders/Sounds/SFX/Player.yy",
+    "name":"Songs",
+    "path":"folders/Sounds/Songs.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"PlayerKatana.wav",
+  "soundFile":"Stage_3.mp3",
   "volume":1.0,
 }

@@ -1,5 +1,5 @@
 function playerStateFree() {
-	sprite_index=spr_playerIdle
+	sprite_index=spr_playerRun
 	
 	#region Horizontal move
 	move=right_control()-left_control()
@@ -107,7 +107,7 @@ function playerStateSliding() {
 	
 function playerStateDamage() {
 	// add sprite*
-	sprite_index=spr_playerIdle
+	sprite_index=spr_playerRun
 	
 	if (instance_exists(obj_swordHitbox)) { instance_destroy(obj_swordHitbox) }
 	

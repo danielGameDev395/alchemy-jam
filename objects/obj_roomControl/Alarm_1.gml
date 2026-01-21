@@ -1,0 +1,1 @@
+play_music(array_get_index(global.stages, room))

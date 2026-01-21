@@ -16,3 +16,6 @@ bomb=layer_get_all_elements("Bomb")[0]
 
 alarm[0]=game_get_speed(gamespeed_fps)/10
 #endregion
+
+audio_stop_all()
+alarm_set(1, game_get_speed(gamespeed_fps)/2)

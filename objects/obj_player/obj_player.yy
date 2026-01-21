@@ -33,12 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_playerIdle",
-    "path":"sprites/spr_playerIdle/spr_playerIdle.yy",
+    "name":"spr_playerRun",
+    "path":"sprites/spr_playerRun/spr_playerRun.yy",
   },
   "spriteMaskId":{
-    "name":"spr_playerIdle",
-    "path":"sprites/spr_playerIdle/spr_playerIdle.yy",
+    "name":"spr_playerMask",
+    "path":"sprites/spr_playerMask/spr_playerMask.yy",
   },
   "visible":true,
 }
