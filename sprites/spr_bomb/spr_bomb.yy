@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Background",
-    "path":"folders/Sprites/Background.yy",
+    "name":"Scenario",
+    "path":"folders/Sprites/Scenario.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

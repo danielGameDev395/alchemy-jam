@@ -2,24 +2,40 @@ if (instance_number(object_index)>1) { instance_destroy(); exit }
 
 // init system and types
 global.explo_system=part_system_create()
-global.explo_part=part_type_create()
+global.bomb_part=part_type_create()
+global.robot_part=part_type_create()
 
-// change this for script?
 #macro EXPLO_SYS global.explo_system
-#macro EXPLO_PART global.explo_part
+#macro BOMB_PART global.bomb_part
+#macro ROBOT_PART global.robot_part
 
-#region Explosion particle
+#region Bomb explosion particle
 part_system_depth(EXPLO_SYS, -100)
 
-part_type_shape(EXPLO_PART, pt_shape_pixel)
-part_type_size(EXPLO_PART, 5, 10, -0.01, 0)
-part_type_life(EXPLO_PART, 30, 90)
+part_type_shape(BOMB_PART, pt_shape_pixel)
+part_type_size(BOMB_PART, 3, 7, -0.01, 0)
+part_type_life(BOMB_PART, 30, 70)
 
-part_type_colour3(EXPLO_PART, c_white, c_red, c_gray)
-part_type_alpha3(EXPLO_PART, 1, 0.6, 0.3)
+part_type_colour3(BOMB_PART, c_white, c_maroon, c_gray)
+part_type_alpha3(BOMB_PART, 1, 0.6, 0.3)
 
-part_type_orientation(EXPLO_PART, 10, 170, 0, 0, 0)
-part_type_direction(EXPLO_PART, 10, 170, 0, 0)
-part_type_speed(EXPLO_PART, 1, 3, 0, 0)
-part_type_gravity(EXPLO_PART, 0.001, 90)
+part_type_orientation(BOMB_PART, 10, 170, 0, 0, 0)
+part_type_direction(BOMB_PART, 10, 170, 0, 0)
+part_type_speed(BOMB_PART, 1, 2, 0, 0)
+part_type_gravity(BOMB_PART, 0.001, 90)
 #endregion
+
+#region Robot explosion particle
+part_type_shape(ROBOT_PART, pt_shape_pixel)
+part_type_size(ROBOT_PART, 2, 6, -0.01, 0)
+part_type_life(ROBOT_PART, 25, 45)
+
+part_type_colour_mix(ROBOT_PART, c_ltgray, c_dkgray)
+part_type_alpha3(ROBOT_PART, 1, 0.7, 0.4)
+
+part_type_orientation(ROBOT_PART, -20, 200, 0, 0, 0)
+part_type_direction(ROBOT_PART, -20, 200, 0, 0)
+part_type_speed(ROBOT_PART, 0.5, 1.5, 0, 0)
+part_type_gravity(ROBOT_PART, 0.0005, 90)
+#endregion
+

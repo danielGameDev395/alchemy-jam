@@ -1,1 +1,1 @@
-if (x>0) { audio_play_sound(EnemyDefeated, 0, false) }
+if (x>0) { part_particles_create(EXPLO_SYS, x, y, ROBOT_PART, 100); audio_play_sound(EnemyDefeated, 0, false) }
