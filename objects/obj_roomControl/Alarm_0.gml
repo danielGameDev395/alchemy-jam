@@ -11,4 +11,4 @@ if (!global.paused) {
 }
 
 if (global.time>0) { alarm[0]=game_get_speed(gamespeed_fps)/10 }
-else { room_restart(); game_over("time over") /* bomb explosion logic (game over?) */ }
+else { game_over() /* bomb explosion logic (game over?) */ }

@@ -19,8 +19,8 @@
     {"$GMFolder":"","%Name":"Obstacles","folderPath":"folders/Objects/Obstacles.yy","name":"Obstacles","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Objects/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Stages","folderPath":"folders/Rooms/Stages.yy","name":"Stages","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menus","folderPath":"folders/Rooms/Menus.yy","name":"Menus","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Stages","folderPath":"folders/Rooms/Stages.yy","name":"Stages","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"SFX","folderPath":"folders/Sounds/SFX.yy","name":"SFX","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -47,6 +47,7 @@
   "name":"Alchemy Jam #7",
   "resources":[
     {"id":{"name":"ft_bestTimes","path":"fonts/ft_bestTimes/ft_bestTimes.yy",},},
+    {"id":{"name":"ft_gameover","path":"fonts/ft_gameover/ft_gameover.yy",},},
     {"id":{"name":"ft_timer","path":"fonts/ft_timer/ft_timer.yy",},},
     {"id":{"name":"obj_airRobot","path":"objects/obj_airRobot/obj_airRobot.yy",},},
     {"id":{"name":"obj_dynamite","path":"objects/obj_dynamite/obj_dynamite.yy",},},

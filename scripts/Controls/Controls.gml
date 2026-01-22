@@ -52,4 +52,12 @@ function pause_button() {
 	return keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("P")) ||
 			gamepad_button_check_pressed(0, gp_start)
 }
+
+function restart_button() {
+	return keyboard_check_pressed(ord("R")) || gamepad_button_check_pressed(0, gp_select)
+}
+
+function goto_menu_button() {
+	return keyboard_check_pressed(ord("Q")) || gamepad_button_check_pressed(0, gp_shoulderl)
+}
 #endregion

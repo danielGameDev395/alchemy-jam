@@ -6,7 +6,7 @@ x+=xspd
 if (player.state==playerStateFree) {
 	if (place_meeting(x-1, y, player)) { // horizontal collision
 		player.x+=xspd // pushes the player
-		if (player.x<sprite_width/2) {  game_over("pushed"); room_restart() } // game over* if player escapes the screen
+		if (player.x<sprite_width/2) { player.x=-sprite_width*4; game_over() } // game over if player escapes the screen
 	}
 	else if (place_meeting(x, y-1, player)) { // vertical collision
 		player.x+=xspd

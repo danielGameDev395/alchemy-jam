@@ -57,13 +57,15 @@ function pause_game() {
 		audio_pause_all()
 		audio_play_sound(Pause, 0, false)
 		
-		// stops the ground and the bomb
+		// stops the background
 		layer_hspeed("Ground", 0); layer_sprite_speed(bomb, 0)
+		layer_hspeed("Scenario", 0)
 	}
 	else {
 		audio_resume_all()
 		
 		layer_hspeed("Ground", -2); layer_sprite_speed(bomb, 1)
+		layer_hspeed("Scenario", -0.5)
 	}	
 }
 
@@ -78,11 +80,13 @@ function play_music(stage) {
 }
 
 // controls the game over logic
-function game_over(cause) {
-	// based on the game over cause
-	switch (cause) {
-		case "pushed": show_debug_message("The wall pushed you :("); break;
-		case "time over": show_debug_message("The time is up :("); break;
-		default: show_message($"{cause} isn't a valid cause") break;
-	}
+function game_over() {
+	if (global.gameover) { exit; }
+	
+	obj_player.state=playerStateDead
+	obj_roomControl.time_freezed=true
+	
+	part_particles_create(EXPLO_SYS, room_width/2, room_height/2, GAMEOVER_PART, 500)
+	
+	obj_roomControl.alarm[2]=120 // active the alarm at the explosion's final
 }

@@ -14,7 +14,7 @@ function playerStateFree() {
 	}
 	
 	// apply speed and limit X
-	x+=xspd; x=clamp(x, abs(sprite_width/2), room_width-abs(sprite_width/2))
+	x+=xspd; x=clamp(x, abs(sprite_width/4), room_width-abs(sprite_width/4))
 	#endregion
 	
 	#region Change state
@@ -120,3 +120,7 @@ function playerStateDamage() {
 	if (place_meeting(x, y+1, obj_solid)) { dmg_dir=0; xspd=0; yspd=0; state=playerStateFree }
 }
 
+function playerStateDead() {
+	image_speed=0
+	image_blend=c_dkgray
+}
