@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.4081406,
+  "duration":0.3938549,
   "exportDir":"",
   "name":"Pause",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"Pause.wav",
-  "volume":0.65,
+  "volume":1.0,
 }

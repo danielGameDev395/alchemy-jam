@@ -1,18 +1,18 @@
 {
   "$GMSound":"v2",
-  "%Name":"MenuConfirm",
+  "%Name":"GameoverExplosion",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "channelFormat":1,
+  "channelFormat":0,
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.42560092,
+  "duration":1.6975964,
   "exportDir":"",
-  "name":"MenuConfirm",
+  "name":"GameoverExplosion",
   "parent":{
     "name":"Misc",
     "path":"folders/Sounds/SFX/Misc.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"MenuConfirm.wav",
-  "volume":0.8,
+  "soundFile":"GameoverExplosion.wav",
+  "volume":1.0,
 }

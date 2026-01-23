@@ -22,17 +22,17 @@ draw_set_alpha(alpha_over2)
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 // shadow
-draw_set_color(c_red)
-draw_text(w_middle+1, h_middle+1, "G A M E - O V E R")
+draw_set_color(c_black)
+draw_text(w_middle+1, h_middle-14, "G A M E - O V E R")
 //text
 draw_set_color(c_white)
-draw_text(w_middle, h_middle, "G A M E - O V E R")
+draw_text(w_middle, h_middle-15, "G A M E - O V E R")
 
 // buttons to restart
 draw_set_font(ft_bestTimes)
 draw_set_alpha(alpha_over2-0.3)
 draw_text(w_middle, h_middle+30, "Press R or Select to restart")
-draw_text(w_middle, h_middle+45, "Press Q or LB to go to stage select")
+draw_text(w_middle, h_middle+50, "Press Q or LB to go to stage select")
 
 #endregion
 

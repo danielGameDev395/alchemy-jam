@@ -81,12 +81,16 @@ function play_music(stage) {
 
 // controls the game over logic
 function game_over() {
-	if (global.gameover) { exit; }
+	if (obj_player.state==playerStateDead) { exit; }
+	
+	audio_stop_all()
+	audio_play_sound(GameoverExplosion, 0, false)
 	
 	obj_player.state=playerStateDead
 	obj_roomControl.time_freezed=true
 	
 	part_particles_create(EXPLO_SYS, room_width/2, room_height/2, GAMEOVER_PART, 500)
 	
-	obj_roomControl.alarm[2]=120 // active the alarm at the explosion's final
+	// active the alarm at the explosion's final
+	obj_roomControl.alarm[2]=audio_sound_length(GameoverExplosion)*game_get_speed(gamespeed_fps)
 }

@@ -1,18 +1,18 @@
 {
   "$GMSound":"v2",
-  "%Name":"MenuConfirm",
+  "%Name":"Slide",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "channelFormat":1,
+  "channelFormat":0,
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.42560092,
+  "duration":4.6538777,
   "exportDir":"",
-  "name":"MenuConfirm",
+  "name":"Slide",
   "parent":{
     "name":"Misc",
     "path":"folders/Sounds/SFX/Misc.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"MenuConfirm.wav",
-  "volume":0.8,
+  "soundFile":"Slide.mp3",
+  "volume":1.0,
 }

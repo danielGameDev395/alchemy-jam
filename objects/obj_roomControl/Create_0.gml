@@ -18,8 +18,6 @@ alarm[0]=game_get_speed(gamespeed_fps)/10
 #endregion
 
 #region Gameover
-audio_gain=1
-
 audio_stop_all()
 alarm_set(1, game_get_speed(gamespeed_fps)/2)
 
