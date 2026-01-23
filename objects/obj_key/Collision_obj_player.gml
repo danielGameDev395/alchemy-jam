@@ -3,7 +3,7 @@ if !(obj_roomControl.time_freezed) { exit; }
 stage_index=array_get_index(global.stages, room)
 
 // register best time
-if (global.best_times[stage_index]==0 || global.time<global.best_times[stage_index]) {
+if (global.best_times[stage_index]==0 || global.time>global.best_times[stage_index]) {
 	global.best_times[stage_index]=global.time
 }
 

@@ -15,6 +15,6 @@ if (global.gameover) {
 	// restart buttons
 	if (alpha_over2>=0.55) {
 		if (restart_button()) { room_restart() }
-		if (goto_menu_button()) { room_goto(Stage_Selector) }
+		if (goto_menu_button()) { room_goto(rm_stageSelector) }
 	}
 }

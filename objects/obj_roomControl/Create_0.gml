@@ -1,8 +1,13 @@
 #region Time
-// add switch case for rooms*
-
 // time in seconds
-global.time=10
+global.time=0
+
+switch (room) {
+	case rm_stage1: global.time=15 break;
+	case rm_stage2: global.time=19 break;
+	case rm_stage3: global.time=22 break;
+}
+
 critic_time=global.time/2
 
 time_freezed=false

@@ -8,7 +8,7 @@ arm=layer_sprite_create("Assets_back", x, y, spr_airRobotArm)
 layer_sprite_xscale(arm, -1)
 
 // the bomb have the same speed
-xspd=-4; bomb.xspd=xspd
+xspd=-3; bomb.xspd=xspd
 
 attack_condition=function() {
 	distance=abs(x-player.x)
@@ -17,6 +17,8 @@ attack_condition=function() {
 
 // change this function when have animation*
 attack=function() {
-	bomb.fall=true; bomb.xspd=0
+	if (instance_exists(bomb)) {
+		bomb.fall=true; bomb.xspd=0
+	}
 	state=enemyStateFree
 }

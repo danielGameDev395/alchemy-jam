@@ -1,5 +1,5 @@
 player=instance_nearest(x, y, obj_player)
-xspd=-3
+xspd=-2
 image_xscale=-1
 
 sprite_free=sprite_index

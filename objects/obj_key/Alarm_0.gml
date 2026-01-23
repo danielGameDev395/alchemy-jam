@@ -1,3 +1,3 @@
 audio_stop_all()
 
-room_goto(Stage_Selector)
+room_goto(rm_stageSelector)

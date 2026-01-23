@@ -1,12 +1,12 @@
 {
   "$GMRoom":"v1",
-  "%Name":"Menu",
+  "%Name":"rm_mainMenu",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_61FE0789","path":"rooms/Menu/Menu.yy",},
+    {"name":"inst_61FE0789","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -20,7 +20,7 @@
       ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_Scenario3","path":"sprites/spr_Scenario3/spr_Scenario3.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"Menu",
+  "name":"rm_mainMenu",
   "parent":{
     "name":"Menus",
     "path":"folders/Rooms/Menus.yy",

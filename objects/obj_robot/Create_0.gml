@@ -7,8 +7,8 @@ laser=noone
 sprite_attack=spr_robotAttack
 
 attack_condition=function() {
-	distance=abs(x-player.x)
-	return (distance<150)
+	distance=x-player.x
+	return (distance<150 && player.x<room_width-abs(sprite_width)*4)
 }
 
 attack=function() {

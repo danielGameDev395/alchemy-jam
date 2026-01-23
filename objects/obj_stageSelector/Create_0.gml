@@ -1,14 +1,14 @@
 index=0
 
-boxes=layer_get_all_elements("Chips")
+chips=layer_get_all_elements("Chips")
 
-stages=array_length(boxes)-1
+stages=array_length(chips)-1
 
 select=function(index) {
 	switch (index) {
-	    case 0: room_goto(Debug) break;
-	    case 1: room_goto(Stage1) break;
-	    //case 2: room_goto(Stage3) break;
+	    case 0: room_goto(rm_stage1) break;
+	    case 1: room_goto(rm_stage2) break;
+	    case 2: room_goto(rm_stage3) break;
 	    default:  break;
 	}
 }

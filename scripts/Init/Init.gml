@@ -10,8 +10,7 @@ display_set_gui_size(WIDTH, HEIGHT)
 
 // globals
 global.paused=false
-global.stages=[Debug, Stage1]
-//global.stages=[Stage1, Stage2, Stage3]
+global.stages=[rm_stage1, rm_stage2, rm_stage3]
 
 // macros
 #macro GRAVITY 0.5
