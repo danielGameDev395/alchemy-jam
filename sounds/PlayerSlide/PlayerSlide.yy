@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"Slide",
+  "%Name":"PlayerSlide",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,15 +12,15 @@
   "conversionMode":0,
   "duration":4.6538777,
   "exportDir":"",
-  "name":"Slide",
+  "name":"PlayerSlide",
   "parent":{
-    "name":"Misc",
-    "path":"folders/Sounds/SFX/Misc.yy",
+    "name":"Player",
+    "path":"folders/Sounds/SFX/Player.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"Slide.mp3",
+  "soundFile":"PlayerSlide.mp3",
   "volume":0.9,
 }

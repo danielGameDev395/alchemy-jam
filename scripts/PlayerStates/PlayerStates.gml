@@ -51,7 +51,7 @@ function playerStateAir() {
 		yspd=0; xspd=0; state=playerStateFree
 	}
 	// Sliding
-	if (place_meeting(x+image_xscale*spd, y, obj_wall)) { audio_play_sound(Slide, 0, false); yspd=0; xspd=0; state=playerStateSliding }
+	if (place_meeting(x+image_xscale*spd, y, obj_wall)) { audio_play_sound(PlayerSlide, 0, false); yspd=0; xspd=0; state=playerStateSliding }
 	// Attack
 	if (attack_button()) { xspd=0; yspd=0; state=playerStateAttackAir }
 	#endregion
@@ -97,14 +97,14 @@ function playerStateSliding() {
 	#region Change state
 	// Air
 	if (jump_button()) {
-		if (audio_exists(Slide)) { audio_stop_sound(Slide) }
+		if (audio_exists(PlayerSlide)) { audio_stop_sound(PlayerSlide) }
 		yspd=jump_spd; audio_play_sound(PlayerJump, 0, false);
 		x-=sprite_width/2; state=playerStateAir
 	}
 	// Free
 	if (place_meeting(x, y+yspd, obj_solid)) {
 		while !(place_meeting(x, y+sign(yspd), obj_solid)) { y+=sign(yspd) }
-		if (audio_exists(Slide)) { audio_stop_sound(Slide) }
+		if (audio_exists(PlayerSlide)) { audio_stop_sound(PlayerSlide) }
 		yspd=0; state=playerStateFree
 	}
 }
