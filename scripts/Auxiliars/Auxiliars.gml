@@ -28,7 +28,7 @@ function player_damage(damage, other_, yspd_, cooldown) {
 		dmg_dir=sign(x-other_.x)
 		
 		// gain speed
-		xspd=dmg_dir*spd
+		xspd=dmg_dir*base_spd
 		yspd=yspd_
 		
 		// damage cooldown

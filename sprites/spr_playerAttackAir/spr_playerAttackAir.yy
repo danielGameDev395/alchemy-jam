@@ -23,7 +23,7 @@
   ],
   "name":"spr_playerAttackAir",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Player",
     "path":"folders/Sprites/Player.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":30,
-    "yorigin":30,
+    "yorigin":60,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

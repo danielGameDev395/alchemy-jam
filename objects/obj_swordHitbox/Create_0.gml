@@ -1,4 +1,4 @@
-image_xscale=obj_player.image_xscale
+player=instance_nearest(x, y, obj_player)
 
 damage=1
 

@@ -1,6 +1,8 @@
 // get GUI size
 var gui_width=display_get_gui_width()
 var gui_height=display_get_gui_height()
+var w_middle=gui_width/2
+var h_middle=gui_height/2
 
 #region Time
 draw_set_font(ft_timer)
@@ -22,15 +24,28 @@ if (time_change!=0) {
 
 #region Pause screen
 if (global.paused) {
+	// darkness the screen
 	draw_set_color(c_black)
 	draw_set_alpha(0.5)
 	draw_rectangle(0, 0, gui_width, gui_height, false)
 	
-	draw_set_colour(c_silver)
-	draw_set_font(ft_gameTitle)
+	// message
+	draw_set_font(ft_gameover)
+	draw_set_alpha(1)
 	draw_set_halign(fa_center)
 	draw_set_valign(fa_middle)
-	draw_text(gui_width/2, gui_height/2, "Game Paused")
+	// shadow
+	draw_set_colour(c_black)
+	draw_text(w_middle+1, h_middle-1, "G a m e P a u s e d")
+	
+	draw_set_colour(c_silver)
+	draw_text(w_middle, h_middle, "G a m e P a u s e d")
+	
+	// restart buttons
+	draw_set_font(ft_bestTimes)
+	
+	draw_text(w_middle, h_middle+30, "Press R or Select to restart")
+	draw_text(w_middle, h_middle+50, "Press Q or LB to go to stage select")
 }
 #endregion
 

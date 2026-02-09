@@ -25,7 +25,7 @@ for (var i=0; i<array_length(actions); i++) {
 draw_set_font(ft_gameTitle)
 draw_set_color(c_orange)
 
-draw_text(middle_w, text_h+distance*(array_length(actions)+1), "Press Esc or Select to return")
+draw_text(middle_w, text_h+distance*(array_length(actions)+1), "Press Esc/Backspace or Select to return")
 
 // set all to default
 draw_set_font(-1)

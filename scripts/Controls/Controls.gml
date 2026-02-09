@@ -34,18 +34,18 @@ function down_button() {
 
 #region In game actions
 function jump_button() {
-	return keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("J")) ||
+	return keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("J")) ||
 			gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(0, gp_shoulderlb)
 }
 
 function attack_button() {
-	return keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("K")) ||
+	return keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("K")) ||
 			gamepad_button_check_pressed(0, gp_face3) || gamepad_button_check_pressed(0, gp_shoulderrb)
 }
 
 function pause_button() {
-	return keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("P")) ||
-			gamepad_button_check_pressed(0, gp_start)
+	return keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_alt) ||
+			keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_start)
 }
 #endregion
 
@@ -64,6 +64,7 @@ function goto_menu_button() {
 }
 
 function return_button() {
-	return keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_select)
+	return keyboard_check_pressed(vk_escape) || keyboard_check_pressed(vk_backspace) || 
+			gamepad_button_check_pressed(0, gp_select)
 }
 #endregion

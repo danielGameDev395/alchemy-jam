@@ -3,7 +3,7 @@ actions=[
 ]
 
 keyboard=[
-	"Keyboard", "", "WASD | Keys", "WASD | Keys", "J | Spacebar", "K | Enter", "P | Esc", "Spacebar | Enter"
+	"Keyboard", "", "WASD | Keys", "WASD | Keys", "J | Z", "K | X", "P | Alt | Esc", "Spacebar | Enter"
 ]
 
 controller=[

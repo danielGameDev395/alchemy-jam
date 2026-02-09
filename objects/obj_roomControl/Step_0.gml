@@ -6,6 +6,11 @@ if (alpha_time==0) { time_change=0 }
 // pause
 if (pause_button() && !global.gameover && alarm[2]<=0) { pause_game() }
 
+if (global.paused) {
+	if (restart_button()) { room_restart(); pause_game() }
+	if (goto_menu_button()) { room_goto(rm_stageSelector); pause_game() }
+}
+
 // gameover
 if (global.gameover) { 
 	alpha_over=lerp(alpha_over, 0.7, 0.01)

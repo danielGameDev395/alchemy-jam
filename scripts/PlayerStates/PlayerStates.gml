@@ -1,21 +1,27 @@
-function playerStateFree() {
-	sprite_index=spr_playerRun
-	
-	#region Horizontal move
-	move=right_control()-left_control()
+function horizontalMovement(spd = base_spd) {
+	// move and scale
+	var move=right_control()-left_control()
 	if (move!=0) { image_xscale=move }
-
+	
+	// set speed with multiplier
 	xspd=move*spd
 	
 	// collision with wall
 	if (place_meeting(x+xspd, y, obj_wall)) {
-		while (!place_meeting(x+sign(xspd), y, obj_wall)) { x+=sign(xspd) }
+		while !(place_meeting(x+sign(xspd), y, obj_wall)) { x+=sign(xspd) }
 		xspd=0
 	}
 	
 	// apply speed and limit X
-	x+=xspd; x=clamp(x, abs(sprite_width/4), room_width-abs(sprite_width/4))
-	#endregion
+	x+=xspd
+	x=clamp(x, abs(sprite_width/4), room_width-abs(sprite_width/4))
+}
+
+function playerStateFree() {
+	sprite_index=spr_playerRun
+	
+	// apply horizontal movement with base speed
+	horizontalMovement()
 	
 	#region Change state
 	// Air
@@ -31,15 +37,8 @@ function playerStateAir() {
 	// add sprite falling*
 	sprite_index=spr_playerJump
 	
-	#region Horizontal move
-	move=right_control()-left_control()
-	if (move!=0) { image_xscale=move }
-	
 	// move with lower speed
-	xspd=move*(spd*0.8)
-	
-	x+=xspd; x=clamp(x, abs(sprite_width/4), room_width-abs(sprite_width/4))
-	#endregion
+	horizontalMovement(base_spd*0.8)
 	
 	// apply gravity and move player vertically
 	yspd+=GRAVITY; y+=yspd
@@ -51,7 +50,7 @@ function playerStateAir() {
 		yspd=0; xspd=0; state=playerStateFree
 	}
 	// Sliding
-	if (place_meeting(x+image_xscale*spd, y, obj_wall)) { audio_play_sound(PlayerSlide, 0, false); yspd=0; xspd=0; state=playerStateSliding }
+	if (place_meeting(x+image_xscale*base_spd, y, obj_wall)) { audio_play_sound(PlayerSlide, 0, false); yspd=0; xspd=0; state=playerStateSliding }
 	// Attack
 	if (attack_button()) { xspd=0; yspd=0; state=playerStateAttackAir }
 	#endregion
@@ -60,7 +59,8 @@ function playerStateAir() {
 function playerStateAttack() {
 	sprite_index=spr_playerAttack
 	
-	// change this value after definitive animation*
+	horizontalMovement(base_spd*0.9)
+	
 	if (image_index>2 && !instance_exists(obj_swordHitbox)) { instance_create_depth(x, y, depth-1, obj_swordHitbox) }
 	
 	// Back to free state
@@ -72,6 +72,8 @@ function playerStateAttack() {
 
 function playerStateAttackAir() {
 	sprite_index=spr_playerAttackAir
+	
+	horizontalMovement(base_spd*0.75)
 	
 	yspd+=GRAVITY/2; y+=yspd
 	
