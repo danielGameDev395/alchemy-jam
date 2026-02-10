@@ -69,6 +69,7 @@
     {"id":{"name":"obj_stageSelector","path":"objects/obj_stageSelector/obj_stageSelector.yy",},},
     {"id":{"name":"obj_swordHitbox","path":"objects/obj_swordHitbox/obj_swordHitbox.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"obj_windowResize","path":"objects/obj_windowResize/obj_windowResize.yy",},},
     {"id":{"name":"rm_controls","path":"rooms/rm_controls/rm_controls.yy",},},
     {"id":{"name":"rm_debug","path":"rooms/rm_debug/rm_debug.yy",},},
     {"id":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},},

@@ -8,7 +8,7 @@ if (pause_button() && !global.gameover && alarm[2]<=0) { pause_game() }
 
 if (global.paused) {
 	if (restart_button()) { room_restart(); pause_game() }
-	if (goto_menu_button()) { room_goto(rm_stageSelector); pause_game() }
+	if (goto_menu_button()) { audio_stop_all(); room_goto(rm_stageSelector); pause_game() }
 }
 
 // gameover

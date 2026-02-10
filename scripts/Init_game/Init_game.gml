@@ -1,12 +1,17 @@
 // window config
-#macro WIDTH 720
-#macro HEIGHT 480
+#macro WIDTH 512
+#macro HEIGHT 288
 
-window_set_size(WIDTH, HEIGHT)
-window_center()
+function screen_resize() {
+	var scale=floor(display_get_width()/WIDTH)
 
-surface_resize(application_surface, WIDTH, HEIGHT)
-display_set_gui_size(WIDTH, HEIGHT)
+	window_set_size(WIDTH*scale, HEIGHT*scale)
+	window_center()
+
+	display_set_gui_size(WIDTH*scale, HEIGHT*scale)
+}
+
+screen_resize()
 
 // globals
 global.paused=false

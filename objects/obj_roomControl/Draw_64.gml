@@ -11,7 +11,7 @@ draw_set_color(c_white)
 if (global.time<critic_time) { draw_set_color(c_red) }
 
 // chronometer
-draw_text(35, 15, format_time(global.time))
+draw_text(50, 20, format_time(global.time))
 
 // time change visual indicator
 if (time_change!=0) {
@@ -36,10 +36,10 @@ if (global.paused) {
 	draw_set_valign(fa_middle)
 	// shadow
 	draw_set_colour(c_black)
-	draw_text(w_middle+1, h_middle-1, "G a m e P a u s e d")
+	draw_text(w_middle+1, h_middle-1, "G A M E  P A U S E D")
 	
 	draw_set_colour(c_silver)
-	draw_text(w_middle, h_middle, "G a m e P a u s e d")
+	draw_text(w_middle, h_middle, "G A M E  P A U S E D")
 	
 	// restart buttons
 	draw_set_font(ft_bestTimes)
