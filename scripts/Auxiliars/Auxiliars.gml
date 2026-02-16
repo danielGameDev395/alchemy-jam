@@ -89,7 +89,11 @@ function game_over() {
 	obj_player.state=playerStateDead
 	obj_roomControl.time_freezed=true
 	
-	part_particles_create(EXPLO_SYS, room_width/2, room_height/2, GAMEOVER_PART, 500)
+	// less particles on mobile for optimization
+	if (global.is_mobile) { parts=200 }
+	else { parts=500 }
+	
+	part_particles_create(EXPLO_SYS, room_width/2, room_height/2, GAMEOVER_PART, parts)
 	
 	// active the alarm at the explosion's final
 	obj_roomControl.alarm[2]=audio_sound_length(GameoverExplosion)*game_get_speed(gamespeed_fps)

@@ -44,6 +44,7 @@ function screen_resize() {
 // globals
 global.paused=false
 global.stages=[rm_stage1, rm_stage2, rm_stage3]
+global.best_times=[0,0,0]
 
 // macros
 #macro GRAVITY 0.5

@@ -1,4 +1,7 @@
 function save_game() {
+	// doesn't save on mobile browser (avoid bugs)
+	if (is_mobile_browser()) { exit; }
+	
 	if (file_exists("save.sav")) { file_delete("save.sav") }
 	
 	ini_open("save.sav")
@@ -11,6 +14,8 @@ function save_game() {
 }
 
 function load_game() {
+	if (is_mobile_browser()) { exit; }
+
 	global.best_times=[0,0,0]
 
 	if (file_exists("save.sav")) {
