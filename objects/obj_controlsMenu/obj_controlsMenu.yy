@@ -10,8 +10,8 @@
   "name":"obj_controlsMenu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Controllers",
-    "path":"folders/Objects/Controllers.yy",
+    "name":"Menus",
+    "path":"folders/Objects/Controllers/Menus.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -4,9 +4,10 @@ if (time_freezed) { exit; }
 if (!global.paused) { 
 	global.time-=0.1
 	
-	// bomb's animation faster
+	// bomb's animation faster and bomb's blend
 	if (global.time<critic_time) {
 		layer_sprite_speed(bomb, 1.5)
+		layer_sprite_blend(bomb, c_red)
 	}
 }
 

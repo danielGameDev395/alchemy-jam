@@ -2,6 +2,11 @@ options=[
 	"Start Game", "Leave game", "Controls"
 ]
 
+// if in mobile, delete the controls option
+if (global.is_mobile) {
+	array_delete(options, array_get_index(options, "Controls"), 1)
+}
+
 index=0
 
 select=function(index_) {
